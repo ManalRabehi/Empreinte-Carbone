@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mon Empreinte Carbone</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="styleHabillement.css">
+        <script src="script.js" defer></script>
+        <script src="https://kit.fontawesome.com/6518d92058.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="../images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="#">Transport</a></li>
+                        <li><a href="#">Numérique</a></li>
+                        <li><a href="#">Alimentation</a></li>
+                        <li><a href="#">Habillement</a></li>
+                        <li><a href="#">Electro-ménager</a></li>
+                        <li><a href="#">Engagement</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+    
+            </div>
+        </div>
+        <div class="container">
+            <h1>Calcule ton empreinte carbone liée à</h1>
+            <h2><i class="fa-solid fa-shirt"></i> ta consommation de vêtements durant cette dernière année</h2>
+        </div>
+        <form id="empreinte-form">
+
+            <div class="question-container">
+                <label>Combien de jeans as-tu acheté ?</label>
+                <input type="number" id="jeans" value="0"><br><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de polos as-tu acheté?</label> 
+                <input type="number" id="polo" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de t-shirts en coton as-tu acheté ?</label>
+                <input type="number" id="tshirtencoton" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de t-shirts en polyester as-tu acheté ?</label>
+                <input type="number" id="tshirtenpolyester" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de sweats en coton as-tu acheté ?</label>
+                <input type="number" id="sweatencoton" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de chemises en coton as-tu acheté ?</label>
+                <input type="number" id="chemiseencoton" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de chemises en viscose as-tu acheté ?</label>
+                <input type="number" id="chemiseenviscose" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de paires en cuir as-tu acheté ?</label>
+                <input type="number" id="chaussuresencuir" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de paires en tissu as-tu acheté ?</label>
+                <input type="number" id="chaussuresentissu" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de paires de sport as-tu acheté ?</label>
+                <input type="number" id="chaussuresdesport" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de robes en coton as-tu acheté ?</label>
+                <input type="number" id="robeencoton" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de robes en polyester as-tu acheté ?</label>
+                <input type="number" id="robeenpolyester" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label id="question-text">Combien de robes en viscose as-tu acheté ?</label>
+                <input type="number" id="robeenviscose" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de pulls en laine as-tu acheté ?</label>
+                <input type="number" id="pullenlaine" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de pulls en acrylique as-tu acheté ?</label>
+                <input type="number" id="pullenacrylique" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de pulls en coton recyclé as-tu acheté ?</label>
+                <input type="number" id="pullencotonrecycle" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de manteau as-tu acheté ?</label>
+                <input type="number" id="manteau" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de vestes imperméables as-tu acheté ?</label>
+                <input type="number" id="vesteimpermeable" value="0"><br>
+                <button onclick="suivant(event)">Suivant</button>
+            </div>
+
+            <div class="question-container">
+                <label>Combien de vestes simili-cuir as-tu acheté ?</label>
+                <input type="number" id="vestesimilicuir" value="0"><br>
+                <button id="calculerEmp" type="button">Calculer Mon Empreinte</button>
+            </div>
+
+        </form>
+        <script>
+            // Pour l'affichage du menu 
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        </script>
+
+        <div id="resultat"></div>
+        
+
+    </body>
+</html>

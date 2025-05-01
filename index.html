@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mon Empreinte Carbone</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6518d92058.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Transport</a></li>
+                        <li><a href="#">Numérique</a></li>
+                        <li><a href="#">Alimentation</a></li>
+                        <li><a href="habillement/habillement.html">Habillement</a></li>
+                        <li><a href="#">Electro-ménager</a></li>
+                        <li><a href="#">Engagement</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+    
+            </div>
+        </div>
+        <div class="header-content">
+            <h1>Mon empreinte Carbone</h1>
+            <p>Calcule ton empreinte carbone liée à tes activités à l'université et découvre comment la réduire 😊</p>
+        </div>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="categories">
+                    <h2>Je veux calculer mon empreinte de Carbone liée à...</h2>
+                    <div class="category-grid">
+                        <div class="category-item">Transport</div>
+                        <div class="category-item"><a href="habillement/habillement.html">Habillement</a></div>
+                        <div class="category-item">Alimentation</div>
+                        <div class="category-item">Electroménager</div>
+                        <div class="category-item">Usage numérique</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script> 
+    </body>
+</html>
